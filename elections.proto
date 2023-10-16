@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package proto;
+option go_package = "./proto";
+
+message Parties {
+    repeated Party party = 1;
+}
+message Party {
+    Meta meta = 1;
+    repeated Candidates candidates = 7;
+}
+message Meta {
+    string name = 3;
+}
+message Candidates {
+    repeated Candidate candidate = 3;
+}
+message Candidate {
+    string name = 2;
+    int32 id = 10;
+}
+
+message Region {
+    repeated WhoKnows who_knows = 16;
+}
+message WhoKnows {
+    repeated Person person = 7;
+}
+message Person {
+    int32 id = 1;
+    VoteCount vote_count = 2;
+}
+message VoteCount {
+    int32 cities = 2;
+    int32 villages = 3;
+    int32 ships = 4;
+    int32 foreign = 5;
+}
