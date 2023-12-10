@@ -18,7 +18,7 @@ jobs:
           go-version: '1.18.3'
 
       - name: Fetch dependencies
-        run: go get -u github.com/s5i/elections
+        run: go get -u github.com/s5i/elections2023
 
       - name: Fetch Gox
         run: go install github.com/mitchellh/gox@latest

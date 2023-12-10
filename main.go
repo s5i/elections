@@ -8,7 +8,7 @@ import (
 	"os"
 	"sort"
 
-	pb "github.com/s5i/elections/proto"
+	pb "github.com/s5i/elections2023/proto"
 	"google.golang.org/protobuf/proto"
 )
 

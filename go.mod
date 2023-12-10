@@ -1,4 +1,4 @@
-module github.com/s5i/elections
+module github.com/s5i/elections2023
 
 go 1.18
 
